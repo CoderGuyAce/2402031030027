@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f0ff;
+}
+
+.navbar {
+    background-color: #b341f9;
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #b341f9;
+    margin-right: 1rem;
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.13);
+}
+
+.nav-links a.active {
+    background-color: #c368ff;
+    font-weight: 600;
+    color: white;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.13);
+}
+
+.nav-links a.active:hover {
+    background-color: #dfdfdf1e;
+    font-weight: 600;
+    color: white;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.13);
+}
+.nav-links a:hover {
+    background-color: #dfdfdf1e;
+    font-weight: 600;
+    color: white;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.13);
+}
+
+.logo h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    padding-right: 25vh;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    padding: 0.8rem 1.5rem;
+    margin-right: 40px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.13);
+}
+
+.search-bar input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: rgb(94, 94, 94);
+    width: 200px;
+}
+
+.search-bar input::placeholder {
+    color: rgba(51, 51, 51, 0.7);
+    font-size: medium;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #b341f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-btn .material-icons {
+    font-size: 20px;
+}
+
+.login-btn {
+    background-color: white;
+    color: #b341f9;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.13);
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #dfdfdf1e;
+    color: white;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.13);
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1500px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: white;
+}
+
+.about-title {
+    text-align: center;
+    color: #b341f9;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.about-content {
+    background: white;
+    padding: 2rem;
+}
+
+.about-content h2 {
+    color: #b341f9;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.about-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.team-section {
+    text-align: center;
+}
+
+.team-section h2 {
+    color: #b341f9;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background: rgb(234, 213, 253);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.avatar.v {
+    background-color: #b341f9;
+}
+
+.avatar.a {
+    background-color: #ff6b6b;
+}
+
+.avatar.m {
+    background-color: #4CAF50;
+}
+
+.team-member h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.team-member p {
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #b341f9;
+    color: #ffffff;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}

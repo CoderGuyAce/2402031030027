@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoryTeller</title>
+    <link rel="stylesheet" href="/css/desktop4.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="desktop2.html">Stories</a>
+                <a href="desktop4.html" class="active">Collab</a>
+                <a href="desktop3.html">Create</a>
+                <a href="desktop5.html">About</a>
+            </div>
+            <div class="logo">
+                <h1>StoryTeller</h1>
+            </div>
+            <div class="nav-actions">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search Story...">
+                    <button type="submit" class="search-btn"><span class="material-icons">search</span></button>
+                </div>
+                <button class="login-btn" onclick="window.location.href='desktop8.html'">Login</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="editor-container">
+            <div class="editor-area">
+                <div class="editor-toolbar">
+                    <button class="toolbar-btn add-image-btn">Add Image</button>
+                    <button class="toolbar-btn bold-btn">B</button>
+                    <button class="toolbar-btn italic-btn">I</button>
+                </div>
+                <div class="editor-content" contenteditable="true">
+                    Start Writing your story here...
+                </div>
+            </div>
+            
+            <div class="story-details">
+                <h2>Story Details</h2>
+                <div class="details-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Story Title">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Author Name">
+                    </div>
+                    <div class="form-group">
+                        <select>
+                            <option value="" disabled selected>Select Genre</option>
+                            <option value="fantasy">Fantasy</option>
+                            <option value="scifi">Science Fiction</option>
+                            <option value="mystery">Mystery</option>
+                            <option value="romance">Romance</option>
+                            <option value="thriller">Thriller</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Keywords (comma-seperated)">
+                    </div>
+                </div>
+                
+                <div class="collaborators-section">
+                    <h3>Collaborators</h3>
+                    <div class="collaborator-list">
+                        <div class="collaborator">
+                            <div class="avatar v">V</div>
+                            <span>Vraj (Editing)</span>
+                        </div>
+                        <div class="collaborator">
+                            <div class="avatar a">A</div>
+                            <span>Arya (Viewing)</span>
+                        </div>
+                    </div>
+                    <button class="invite-btn">+ Invite Collaborator</button>
+                </div>
+                
+                <div class="comments-section">
+                    <h3>Comments</h3>
+                    <div class="comment-box">
+                        <textarea placeholder="Add a comment..."></textarea>
+                    </div>
+                    <button class="comment-btn">Add Comments</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 StoryTelling. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoryTeller</title>
+    <link rel="stylesheet" href="/css/desktop3.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="desktop2.html">Stories</a>
+                <a href="desktop4.html">Collab</a>
+                <a href="desktop3.html" class="active">Create</a>
+                <a href="desktop5.html">About</a>
+            </div>
+            <div class="logo">
+                <h1>StoryTeller</h1>
+            </div>
+            <div class="nav-actions">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search Story...">
+                    <button type="submit" class="search-btn"><span class="material-icons">search</span></button>
+                </div>
+                <button class="login-btn" onclick="window.location.href='desktop8.html'">Login</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="create-title">Create Your Story</h2>
+        <div class="create-options">
+            <div class="create-option manual">
+                <span class="icon">✏️</span>
+                <h3>Create Manually</h3>
+            </div>
+            <div class="create-option ai">
+                <span class="icon">🤖</span>
+                <h3>Generate With AI</h3>
+            </div>
+        </div>
+
+        <div class="story-form">
+            <div class="form-group">
+                <label>Text Prompt</label>
+                <textarea placeholder="Describe what you want to generate through AI"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Title</label>
+                <input type="text" placeholder="Add Title">
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Select genre</label>
+                    <div class="select-wrapper">
+                        <select>
+                            <option>Pick an option</option>
+                            <option>Adventure</option>
+                            <option>Thriller</option>
+                            <option>Fantasy</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Word Limit</label>
+                    <input type="number" value="2000">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Add cover</label>
+                <button class="choose-image">Choose Image</button>
+            </div>
+            <button class="generate-btn">Generate</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 StoryTelling. All rights reserved.</p>
+    </footer>
+</body>
+</html>
